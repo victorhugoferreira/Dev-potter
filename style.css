@@ -1,14 +1,64 @@
-.header {
-  display: flex;
-  background-color: rgb(50, 167, 145);
+body {
+  margin: 0 auto;
 }
 
-#header-form {
+.header {
+  position: relative;
+  box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
+}
+
+.header input::placeholder {
+  padding: 10px;
+}
+
+.header {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(50, 167, 145);
+  height: 70px;
+}
+
+.header img {
+  width: 60px;
+  height: 60px;
+  max-width: auto;
+  max-height: auto;
+  margin-left: 10px;
+}
+
+.header h1 {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 800;
+  font-size: 60px;
+  color: white;
+}
+
+.header div {
+  margin-right: 30px;
+}
+
+.header input {
+  border: none;
+  margin-right: 20px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+
+
+.header button {
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: grey;
+  width: 80px;
 }
 
 main {
   display: flex;
+  background-color: rgb(177, 173, 173);
 }
 
 #evaluation-form {
