@@ -54,7 +54,7 @@
                 <input type="email" placeholder="Email" id="input-email" />
                 <p>Casa:</p>
                 <select name="" id="house">
-                  <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+                  <option id="gitnoria-house" value="Gitnória" selected>Gitnória</option>
                   <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
                   <option id="corvinode-house" value="Corvinode">Corvinode</option>
                   <option id="pytherina-house" value="Pytherina">Pytherina</option>
@@ -68,7 +68,7 @@
         <div class="family">
           <p id="label-family" for="">Qual sua família?</p>
         <div class="frontend">
-          <input type="radio" name="family" value="Frontend" />
+          <input type="radio" name="family" value="Frontend" checked/>
           Frontend
         </div>
         
@@ -85,12 +85,12 @@
       
       <div class="tech">
         <p id="label-content" for=""
-        >Qual conteúdo você está com mais vontade de aprender?</
+        >Qual conteúdo você está com mais vontade de aprender?/
         >
         
         <div class="checkbox">
           <div class="tech-checkbox">
-            <input class="subject" value="HoFs" type="checkbox" name="" />HoFs
+            <input class="subject" value="HoFs" type="checkbox" name="" checked/>HoFs
             <input class="subject" value="Jest" type="checkbox" name="" />Jest
             <input
             class="subject"
@@ -111,15 +111,17 @@
             />
             Python
           </div>
+          </div>
         </div>
-      </div>
         </div>
           
-      <hr class="line">
+        <hr class="line">
         
+        <div class="grade">
           <div class="div-avaliation">
-            <p id="label-rate" for="">Como você avalia a Trybewarts?</p>
-            
+              <p id="label-rate" for="">Como você avalia a Trybewarts?</p>
+            </div>
+              
           <div class="rate">
             <input type="radio" name="rate" value="1" />1
             <input type="radio" name="rate" value="2" />2
@@ -142,7 +144,8 @@
           </div>
           
           <div class="counter">
-            <p id="counter">500</p>
+            <p id="counter">0</p>
+            <p>/500</p>
           </div>
         </div>
         
@@ -151,8 +154,9 @@
           
           <input type="checkbox" name="" id="agreement">
         </div>
-        
-        <button type="submit" disabled id="submit-btn" >Enviar</button>
+        <div class="last-button">
+          <button type="submit" disabled id="submit-btn" >Enviar</button>
+        </div>
       </form>
     </div>
       <div class="image">
@@ -166,21 +170,26 @@
 
     <main class="main-secundario disabled">
       
-      <div id="form-data" class="infos">
-        <p id="nome"></p>
-        <p id="email"></p>
-        <p id="casa"></p>
-        <p id="familia"></p>
-        <p id="materias"></p>
-        <p id="avaliacao"></p>
-        <p id="observacao"></p>
+      <div class="card">
+        <div id="form-data" class="infos">
+          <p id="nome"></p>
+          <p id="email"></p>
+          <p id="casa"></p>
+          <p id="familia"></p>
+          <p id="materias"></p>
+          <p id="avaliacao"></p>
+          <p id="lunatico">Obrservações:</p>
+          <p id="observacao"></p>
+        </div>
       </div>
 
-      <img src="./images/trybewarts-colored.svg" alt="">
+      <div class="image">
+        <img src="./images/trybewarts-colored.svg" alt="">
+      </div>
 
     </main>
 
-    <footer>Direitos reservados à Trybewarts©</footer>
+    <!-- <footer>Direitos reservados à Trybewarts©</footer> -->
   </body>
   <script src="/script.js"></script>
 </html>

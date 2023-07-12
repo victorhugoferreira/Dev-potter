@@ -33,9 +33,9 @@ const textarea = document.getElementById('textarea');
 function counter() {
   const counterBox = document.getElementById('counter');
 
-  let caracteres = 500;
+  let caracteres = 0;
 
-  caracteres -= textarea.value.length;
+  caracteres += textarea.value.length;
   counterBox.innerText = caracteres;
 }
 
@@ -68,7 +68,7 @@ function loadInfo(info) {
   familia.innerText = `Família: ${info.family}`;
   materias.innerText = `Matérias: ${tech}`;
   avaliacao.innerText = `Avaliação: ${info.rate}`;
-  observacao.innerText = `Observações: ${info.coment}`;
+  observacao.innerText = `${info.coment}`;
 }
 
 function salvarInfo() {
